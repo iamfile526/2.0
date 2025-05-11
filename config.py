@@ -13,41 +13,41 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "25841231"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "0a78fdfe60a7eae835d339f926f3d6a1")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "7966453329:AAFvhQC18tsSm5eruZEeBz0Hm3MnmAsLPvc"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7893911398"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = "mongodb+srv://susantamusic:susantabhan@cluster0.5pwi1py.mongodb.net/?retryWrites=true&w=majority"
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_URI = "DB_URI", "mongodb+srv://hbesta123:mhfecWc6Z5wsMkTH@cluster0.ztap6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "moneycase.link")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "710b7ed8fdc5f89e9036000cc10121921e7732f1")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "linkcents.com")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "98e5a16ac2c06520df6f8798e71b5a46b505564c")
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 300)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/flshtml/125")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002492775782"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in New Movie Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6852649461").split()):
+    for x in (os.environ.get("ADMINS", "7893911398").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -68,9 +68,9 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6852649461)
+ADMINS.append(7893911398)
 
-LOG_FILE_NAME = "filesharingbot.txt"
+LOG_FILE_NAME = "isfilestorebot2.0.txt"
 
 logging.basicConfig(
     level=logging.INFO,
